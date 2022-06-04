@@ -25,16 +25,16 @@ CREATE TABLE parents
 -- a) посчитайте количество всех студентов
 SELECT count(id)
            AS "Количество всех студентов"
-FROM students
+FROM students;
 
 -- b) посчитайте количество студентов с именем Иван
 SELECT count(id)
            AS "Количество всех студентов"
 FROM students
-WHERE name = "Иван"
+WHERE name = "Иван";
 
 -- c) посчитайте количество студентов созданных после 1 сентября 2020 года
 SELECT count(id)
            AS "Количество всех студентов"
 FROM students
-WHERE created_at > '01/09/2020'
+WHERE created_at > '01/09/2020';

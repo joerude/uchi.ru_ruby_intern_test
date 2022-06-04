@@ -30,13 +30,13 @@ CREATE TABLE parents
 -- a) посчитайте количество студентов с родителями
 SELECT count(id)
 FROM students
-WHERE parent_id IS NULL
+WHERE parent_id IS NULL;
 -- b) посчитайте количество студентов с родителями при том что имя родителя Марина
 SELECT count(id)
 FROM students
          JOIN parents p on p.parent_id = students.parent_id
-WHERE p.name = 'Марина'
+WHERE p.name = 'Марина';
 -- c) посчитайте количество студентов без родителя
 SELECT count(id)
 FROM students
-WHERE parent_id NOT NULL
+WHERE parent_id NOT NULL;
